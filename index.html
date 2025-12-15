@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    
     <title>MS17 CODING | Portfolio</title>
 </head>
 <body>
@@ -350,16 +351,16 @@
 
 <section class="contact" id="contact">
     <h2 class="section-title">Me <span>Contacter</span></h2>
-    <form action="#">
+    <form action="https://formspree.io/f/xovgzngz" method="POST">
         <div class="input-box">
-            <input type="text" placeholder="Nom">
-            <input type="email" placeholder="Email">
+            <input type="text" name="name" placeholder="Nom" required>
+            <input type="email" name="email" placeholder="Email" required>
         </div>
         <div class="input-box">
-            <input type="number" placeholder="Téléphone">
-            <input type="text" placeholder="Sujet">
+            <input type="tel" name="phone" placeholder="Téléphone">
+            <input type="text" name="subject" placeholder="Sujet" required>
         </div>
-        <textarea cols="30" rows="10" placeholder="Message"></textarea>
+        <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
         <input type="submit" value="Envoyer" class="btn">
     </form>
 </section>
